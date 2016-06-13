@@ -1,0 +1,32 @@
+{
+  "name": "fleeting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/*.js -w --debug",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "benchmark": "node --max_old_space_size=4096 ./benchmark/suit.js"
+  },
+  "author": "Jack Tuck",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "benchmark": "^2.1.0",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
+    "mocha-lcov-reporter": "^1.2.0"
+  },
+  "keywords": [
+    "local",
+    "lru",
+    "mru",
+    "cache",
+    "caching",
+    "storage",
+    "memory",
+    "in-memory",
+    "fleeting"
+  ]
+}
