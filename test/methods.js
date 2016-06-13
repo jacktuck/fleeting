@@ -26,7 +26,11 @@ describe('fleeting', function() {
   describe('del', function() {
     it('should delete node', function() {
       fleeting.set('k1', 'v1');
-      expect(fleeting.del('k1')).to.equal('v1');
+      fleeting.set('k2', 'v2');
+      fleeting.set('k3', 'v3');
+
+      expect(fleeting.del('k3')).to.equal('v3');
+      expect(fleeting.del('k2')).to.equal('v2');
     });
 
     it('should try to delete non-existant node', function() {
