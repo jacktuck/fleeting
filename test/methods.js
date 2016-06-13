@@ -49,11 +49,13 @@ describe('fleeting', function() {
     it('should bolster node to head', function(done) {
       fleeting.set('k1', 'v1');
       fleeting.set('k2', 'v2');
+      fleeting.set('k3', 'v3');
 
-      expect(fleeting.get('k1')).to.equal('v1');
+      expect(fleeting.get('k3')).to.equal('v3');
+      expect(fleeting.get('k2')).to.equal('v2');
 
       setTimeout(function() {
-        expect(fleeting._linkedlist._head.data.k).to.equal('k1');
+        expect(fleeting._linkedlist._head.data.k).to.equal('k2');
         done();
       }, 50);
     });
