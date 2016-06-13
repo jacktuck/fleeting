@@ -9,12 +9,14 @@ fleeting.on('evicted', function(value) {
 });
 
 for (var i = 0; i < 10; i++) {
-  console.log('set -> ', i, ': ', fleeting.set(i, i));
+  console.log('set -> ', i, ': ', fleeting.set(i, {i: i}));
 }
 
 for (var i = 0; i < 10; i++) {
   console.log('get -> ', i, ': ', fleeting.get(i));
 }
+
+ console.log('del -> ', 9, ': ', fleeting.del(9));
 
 setTimeout(function() {
   for (var i = 5; i < 10; i++) {
