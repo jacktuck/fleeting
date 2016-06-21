@@ -17,8 +17,8 @@ $ npm install fleeting
 * `peek(key) => value` return the value without bolsting its freshness
 * `has(key) => value` return the presence of the key without bolsting its freshness
 * `get(key) => value` return the value and bolsters its freshness
-* `set(key, value) => value` add an item to the cache
-* `del(key) => value` remove an item from the cache
+* `set(key, value) => value` add an node to the cache
+* `del(key) => value` remove an node from the cache
 
 ## Usage
 ```javascript
