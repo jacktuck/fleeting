@@ -58,4 +58,33 @@ setTimeout(function() {
   }
 }, 3000);
 
+/*
+    This should be your output:
+
+    Added node:  0
+    Added node:  1
+    Added node:  2
+    Added node:  3
+    Added node:  4
+    Added node:  5
+    Evicted node:  { k: 0, v: 0, stale: false }
+    Added node:  6
+    Evicted node:  { k: 1, v: 1, stale: false }
+    Added node:  7
+    Evicted node:  { k: 2, v: 2, stale: false }
+    Added node:  8
+    Evicted node:  { k: 3, v: 3, stale: false }
+    Added node:  9
+    Evicted node:  { k: 4, v: 4, stale: false }
+    Getting node:  5
+    Getting node:  6
+    Getting node:  7
+    Getting node:  8
+    Getting node:  9
+    Evicted node:  { k: 5, v: 5, stale: true }
+    Evicted node:  { k: 6, v: 6, stale: true }
+    Evicted node:  { k: 7, v: 7, stale: true }
+    Evicted node:  { k: 8, v: 8, stale: true }
+    Evicted node:  { k: 9, v: 9, stale: true }
+*/
 ```
