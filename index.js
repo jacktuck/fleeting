@@ -12,17 +12,17 @@ function Fleeting(opts) {
   this._cache = {};
 
   Object.defineProperties(this, {
-      '_length': {
-          get: function () {
-              return linkedlist._length
-          }
-      },
-      '_linkedlist': {
-          get: function () {
-              return linkedlist
-          }
+    '_length': {
+      get: function() {
+        return linkedlist._length;
       }
-  })
+    },
+    '_linkedlist': {
+      get: function() {
+        return linkedlist;
+      }
+    }
+  });
 }
 
 util.inherits(Fleeting, EventEmitter);
