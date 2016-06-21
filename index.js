@@ -10,12 +10,19 @@ function Fleeting(opts) {
   this._ttl = (opts.ttl > 0) ? parseInt(opts.ttl) : false;
 
   this._cache = {};
-  this.__defineGetter__('_length', function() {
-    return linkedlist._length;
-  });
-  this.__defineGetter__('_linkedlist', function() {
-    return linkedlist;
-  });
+
+  Object.defineProperties(this, {
+      '_length': {
+          get: function () {
+              return linkedlist._length
+          }
+      },
+      '_linkedlist': {
+          get: function () {
+              return linkedlist
+          }
+      }
+  })
 }
 
 util.inherits(Fleeting, EventEmitter);
