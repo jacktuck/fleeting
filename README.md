@@ -21,7 +21,7 @@ $ npm install fleeting
 * `del(key) => value` remove an item from the cache
 
 ## Usage
-```
+```javascript
 var Fleeting = require('fleeting');
 
 /*
