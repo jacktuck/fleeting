@@ -18,6 +18,7 @@
     "mocha": "^2.5.3",
     "mocha-lcov-reporter": "^1.2.0"
   },
+  "repository": "jacktuck/fleeting",
   "keywords": [
     "local",
     "lru",
