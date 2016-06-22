@@ -38,7 +38,7 @@ fleeting.on('evicted', function(i) {
 
 /*
     Add 10 nodes to the cache with 0-9 as their keys and values. Notice that
-    once we have 0-4 (5 nodes), we start to evict them least-recently-used nodes
+    once we have 0-4 (5 nodes), we start to evict the least-recently-used nodes
     to make way for nodes 5-9.
 */
 for (var i = 0; i < 10; i++) {
