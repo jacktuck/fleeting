@@ -14,8 +14,8 @@ $ npm install fleeting
 ## API
 
 * `purge()` drop the entire cache
-* `peek(key) => value` return the value without bolsting its freshness
-* `has(key) => value` return the presence of the key without bolsting its freshness
+* `peek(key) => value` return the value without bolstering its freshness
+* `has(key) => value` return the presence of the key without bolstering its freshness
 * `get(key) => value` return the value and bolsters its freshness
 * `set(key, value) => value` add a node to the cache
 * `del(key) => value` remove a node from the cache
