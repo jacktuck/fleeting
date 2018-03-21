@@ -4,6 +4,7 @@ A LRU (least-recently-used) in-memory cache for Node.js (less than 300 LOC!).
 
 [![Coverage Status](https://coveralls.io/repos/github/jacktuck/fleeting/badge.svg?branch=master)](https://coveralls.io/github/jacktuck/fleeting?branch=master)
 [![Build Status](https://travis-ci.org/jacktuck/fleeting.svg?branch=master)](https://travis-ci.org/jacktuck/fleeting)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjacktuck%2Ffleeting.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjacktuck%2Ffleeting?ref=badge_shield)
 
 ## Installation
 
@@ -88,3 +89,7 @@ setTimeout(function() {
     Evicted node:  { k: 9, v: 9, stale: true }
 */
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjacktuck%2Ffleeting.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjacktuck%2Ffleeting?ref=badge_large)
